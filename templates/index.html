@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Roger's MVP</title>
+        <meta charset="utf-8">
+        <style>
+            label { min-width: 100px; display: inline-block; }
+            form > div { margin-bottom: 10px; }
+        </style>
+    </head>
+    <body>
+    <h3>Minimum Viable Product</h3>
+        <form method="GET" action="commit_vals">
+            <h4>Input</h4>
+            <div><label for="lat">Latitude</label><input type="number" step="0.001" id="lat" name="lat" required></div>
+            <div><label for="lon">Longitude</label><input type="number" step="0.001" id="lon" name="lon" required></div>
+            <div><button>Test the API</button></div>
+        </form>
+    <br>
+    <h4>Result:</h4>
+    <div id="Result">{{ Result }}</div>
+    </body>
+</html>
